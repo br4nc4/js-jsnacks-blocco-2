@@ -1,13 +1,18 @@
 const listNomi = ["Giuseppe", "Davide", "Francesco", "Anna", "Giampiero", "Fabio"];
 const listCognomi = ["Brancaleon", "Losciale", "Milanesi", "Brambilla", "Bernazzani", "Taffari"];
-const nomeCompleto = [];
+const listaCompleta = ["", "", "", "", "", ""];
 
-const randomNomi = Math.floor(Math.random()*listNomi.length);
-console.log(listNomi[randomNomi]);
 
-const randomCognomi = Math.floor(Math.random()*listCognomi.length);
-console.log(listCognomi[randomCognomi]);
+for (let i = 0; i < listaCompleta.length; i++){  
+    let randomNomi = Math.floor(Math.random()*listNomi.length);
+    console.log(listNomi[randomNomi]);
 
-nomeCompleto.push(listNomi[randomNomi].toString() + listCognomi[randomCognomi].toString());
+    const randomCognomi = Math.floor(Math.random()*listCognomi.length);
+    console.log(listCognomi[randomCognomi]);
 
-console.log(nomeCompleto);
+
+    //listaCompleta.push(listNomi[randomNomi].toString() + listCognomi[randomCognomi].toString());
+
+    
+}
+//console.log(listaCompleta);
