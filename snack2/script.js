@@ -4,15 +4,13 @@ const listaCompleta = ["", "", "", "", "", ""];
 
 
 for (let i = 0; i < listaCompleta.length; i++){  
+
     let randomNomi = Math.floor(Math.random()*listNomi.length);
-    console.log(listNomi[randomNomi]);
+    //console.log(listNomi[randomNomi]);
 
-    const randomCognomi = Math.floor(Math.random()*listCognomi.length);
-    console.log(listCognomi[randomCognomi]);
+    let randomCognomi = Math.floor(Math.random()*listCognomi.length);
+    //console.log(listCognomi[randomCognomi]);
 
-
-    //listaCompleta.push(listNomi[randomNomi].toString() + listCognomi[randomCognomi].toString());
-
-    
+    console.log(listNomi[randomNomi] + " " + listCognomi[randomCognomi])
 }
-//console.log(listaCompleta);
+
